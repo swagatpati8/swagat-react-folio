@@ -12,25 +12,25 @@ const SpotlightSection = () => {
         </>
       ),
       imageAlign: "right",
-      image: "/swagatpati8/images/spotlight01.jpg"
+      image: "/images/spotlight01.jpg"
     },
     {
       title: "Developer",
       content: "I possess a wide knowledge of various tech stacks and am currently expanding my expertise by learning machine learning and automation. I am incredibly versatile, quickly adapting to new technologies and effectively integrating them into my work.",
       imageAlign: "left",
-      image: "/swagatpati8/images/spotlight02.jpg"
+      image: "/images/spotlight02.jpg"
     },
     {
       title: "Analytical thinker",
       content: "I constantly seek opportunities to challenge myself and sharpen my skills. My passion for chess, a game that demands both strategic thinking and adaptability, fuels my ability to solve problems creatively and innovatively.",
       imageAlign: "right",
-      image: "/swagatpati8/images/spotlight03.jpg"
+      image: "/images/spotlight03.jpg"
     },
     {
       title: "Fitness enthusiast",
       content: "I believe the body is a temple—a perfect body supports a perfect mind. This conviction drives me to maintain physical discipline through regular, high-intensity workouts (at least thrice a week). I am also a dedicated practitioner of Brazilian Jiu-Jitsu, holding a blue belt in the sport. My training sharpens my focus, adaptability, and strategic thinking, complementing my work in tech.",
       imageAlign: "left",
-      image: "/swagatpati8/images/spotlight01.jpg"
+      image: "/images/spotlight01.jpg"
     }
   ];
 
