@@ -2,15 +2,18 @@ const PortfolioSection = () => {
   const projects = [
     {
       title: "Insider Trading Detection",
-      description: "Spring boot, spring framework, MongoDB, React, Swagger API"
+      description: "Spring boot, spring framework, MongoDB, React, Swagger API",
+      image: "/swagatpati8/images/pic01.jpg"
     },
     {
       title: "Warren Buffett RAG Chatbot", 
-      description: "Ornare nulla proin odio consequat."
+      description: "Ornare nulla proin odio consequat.",
+      image: "/swagatpati8/images/pic02.jpg"
     },
     {
       title: "MMA Fight Predictor",
-      description: "html, css, google analytics, github"
+      description: "html, css, google analytics, github",
+      image: "/swagatpati8/images/pic03.jpg"
     }
   ];
 
@@ -27,8 +30,8 @@ const PortfolioSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="rounded-lg overflow-hidden hover:scale-105 transition-transform">
-              <div className="w-full h-48 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
-                <span className="text-white font-bold font-mono">Project {index + 1}</span>
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-3 font-mono">{project.title}</h3>

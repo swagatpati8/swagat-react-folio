@@ -33,9 +33,8 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-96 h-96 bg-background rounded-lg flex items-center justify-center">
-              <span className="text-foreground font-mono"></span>
-              <img src="public/images/banner.jpg" alt="Profile Image"></img>
+            <div className="w-96 h-96 bg-background rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="/swagatpati8/images/banner.jpg" alt="Profile Image" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
