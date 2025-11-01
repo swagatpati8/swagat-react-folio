@@ -39,15 +39,14 @@ const MilestonesSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {milestones.map((milestone, index) => (
             <div key={index} className="p-6 hover:scale-105 transition-transform">
-              <div className="w-full h-32 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg mb-6 flex items-center justify-center relative">
+              <div className="w-full h-32 bg-black border border-white/10 rounded-lg mb-6 flex items-center justify-center p-4">
                 {milestone.image && (
                   <img
                     src={milestone.image}
                     alt={`${milestone.title} image`}
-                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                    className="w-full h-full object-contain rounded-lg"
                   />
                 )}
-                <span className="text-white font-bold font-mono z-10"></span>
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4 font-mono">{milestone.title}</h3>
               <p className="text-foreground leading-relaxed font-mono">{milestone.description}</p>
