@@ -2,7 +2,7 @@ const MilestonesSection = () => {
   const milestones = [
     {
       title: "AI Research Extern",
-      description: "Contributed to an Insurance Management System web application. Designed and implemented PostgreSQL database schema for user authentication. Developed a secure login system by building custom JWT-based authentication from scratch. Worked on both backend (Flask) and frontend (React) components in a small team with tight deadlines. Collaborated closely with client-side UI/UX teams and integrated backend services accordingly",
+      description: "Investigated and evaluated AI/ML models using Python to solve challenges in the utilities sector. Evaluated potential AI solutions based on key business metrics such as technical feasibility, ROI and scalability. Teamed up to research, document, and propose an implementation roadmap for the chosen AI use-case. Designed a proof-of-concept in Python to demonstrate the practical application of a proposed AI solution.",
       image: "/images/img05.jpg",
     },
     {
