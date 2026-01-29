@@ -27,13 +27,6 @@ const ContactSection = () => {
               </div>
             </a>
           </div>
-          
-          <Link 
-            to="/chatbot" 
-            className="inline-block font-mono text-sm border border-white/10 px-6 py-3 rounded hover:bg-white/5 transition-colors"
-          >
-            Ask About Swagat →
-          </Link>
         </div>
       </div>
     </footer>

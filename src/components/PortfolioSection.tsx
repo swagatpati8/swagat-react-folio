@@ -1,6 +1,11 @@
 const PortfolioSection = () => {
   const projects = [
     {
+      title: "MMA Fight Predictor",
+      description: "html, css, google analytics, github",
+      image: "/images/pic03.jpg"
+    },
+    {
       title: "Insider Trading Detection",
       description: "Spring boot, spring framework, MongoDB, React, Swagger API",
       image: "/images/pic01.jpg"
@@ -9,11 +14,6 @@ const PortfolioSection = () => {
       title: "Warren Buffett RAG Chatbot", 
       description: "Ornare nulla proin odio consequat.",
       image: "/images/pic02.jpg"
-    },
-    {
-      title: "MMA Fight Predictor",
-      description: "html, css, google analytics, github",
-      image: "/images/pic03.jpg"
     }
   ];
 

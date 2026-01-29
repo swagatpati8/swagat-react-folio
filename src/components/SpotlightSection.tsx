@@ -6,7 +6,6 @@ const SpotlightSection = () => {
         <>
           Rutgers University New Brunswick<br />
           Major: Computer Science<br />
-          Minor: Data Science<br />
           Expected Graduation: May 2026<br />
           Clubs and Organisations: USACS, RUCP, Rutgers Chess Club, RUBJJ
         </>

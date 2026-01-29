@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
   return (
     <section id="About" className="min-h-screen flex items-center py-20">
@@ -29,9 +31,20 @@ const HeroSection = () => {
                 <div className="w-10 h-10 bg-nav-accent rounded flex items-center justify-center">
                   <span className="text-white font-bold">LC</span>
                 </div>
+                
               </a>
             </div>
+            <div className="pt-6">
+              <Link
+                to="/chatbot"
+                className="inline-block font-mono text-foreground border border-white/10 px-3 py-3 rounded hover:bg-white/5 transition-colors"
+              >
+                Ask About Swagat →
+              </Link>
+            </div>
+
           </div>
+          
           <div className="flex justify-center">
             <div className="w-96 h-96 bg-background rounded-lg flex items-center justify-center overflow-hidden">
               <img src="/images/banner.jpg" alt="Profile Image" className="w-full h-full object-cover" />

@@ -1,6 +1,11 @@
 const MilestonesSection = () => {
   const milestones = [
     {
+      title: "Undergraduate Research Assistant",
+      description: "Executing research under Professor Ahmed Elgammal, director of  Rutgers Art and AI Lab. Conducting research on Multimodal Large Language Models (MLLMs), specifically focusing on state-of-the-art (SOTA) image generation and captioning. Investigating the intersection of generative AI and computer vision to improve text-to-image accuracy and descriptive image-to-text synthesis. Committing 12+ hours weekly to technical exploration, literature reviews of recent AI publications, and experimental implementation using Hugging Face and PyTorch.",
+      image: "/images/img06.jpg",
+    },
+    {
       title: "AI Research Extern",
       description: "Investigated and evaluated AI/ML models using Python to solve challenges in the utilities sector. Evaluated potential AI solutions based on key business metrics such as technical feasibility, ROI and scalability. Teamed up to research, document, and propose an implementation roadmap for the chosen AI use-case. Designed a proof-of-concept in Python to demonstrate the practical application of a proposed AI solution.",
       image: "/images/img05.jpg",
