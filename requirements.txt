@@ -1,5 +1,5 @@
 flask
 flask-cors
-langchain-google-genai
-langchain-pinecone
+google-generativeai
+pinecone-client
 python-dotenv
