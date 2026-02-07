@@ -6,21 +6,36 @@ import { Link } from "react-router-dom";
 
 const Chatbot = () => {
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+  
   const [messages, setMessages] = useState<Array<{ role: string; content: string }>>([
-    { role: "assistant", content: "RAG hasn't been set up yet. Stay tuned!" }
+    { role: "assistant", content: "Hi, I'm Swagat's AI assistant! What would you like to know about him?" }
   ]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
     
-    setMessages([...messages, { role: "user", content: input }]);
+    const userQuery = input; // Save the text first!
+    setMessages(prev => [...prev, {role: "user", content: userQuery}]);
     setInput("");
+    setLoading(true);
     
-    // Placeholder response
-    setTimeout(() => {
-      setMessages(prev => [...prev, { role: "assistant", content: "RAG system is not configured yet. Coming soon!" }]);
-    }, 500);
+    try {
+      const response = await fetch("http://127.0.0.1:5000/api/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: input}),
+      });
+      if (!response.ok) throw new Error("Backed is offline");
+
+      const data = await response.json();
+      setMessages(prev => [...prev, { role: "assistant", content: data.answer }]);
+    } catch (error) {
+      setMessages(prev => [...prev, { role: "assistant", content: "Sorry, I'm having trouble connecting to the server. Is the Flask app running?" }]);
+    } finally {
+      setLoading(false); // Stop "Thinking" state
+    }
   };
 
   return (
