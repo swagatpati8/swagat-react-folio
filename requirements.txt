@@ -1,5 +1,0 @@
-flask
-flask-cors
-google-generativeai
-pinecone-client
-python-dotenv
