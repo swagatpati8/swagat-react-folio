@@ -22,14 +22,13 @@ const Chatbot = () => {
     setLoading(true);
     
     try {
-      const API_URL = "https://swagat-react-folio.onrender.com"
+      const API_URL = "https://swagat-react-folio.onrender.com/api/chat"
       const response = await fetch(API_URL, {        
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({message: input}),
       });
       if (!response.ok) throw new Error("Backed is offline");
-
       const data = await response.json();
       setMessages(prev => [...prev, { role: "assistant", content: data.answer }]);
     } catch (error) {
