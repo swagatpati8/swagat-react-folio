@@ -2,16 +2,16 @@ const PortfolioSection = () => {
   const projects = [
     {
       title: "MMA Fight Predictor",
-      description: "html, css, google analytics, github",
+      description: "React, Python (Flask), Machine Learning, Supabase",
       image: "/images/pic03.jpg"
     },
     {
-      title: "Insider Trading Detection",
-      description: "Spring boot, spring framework, MongoDB, React, Swagger API",
+      title: "Swagat's RAG Chatbot",
+      description: "Python (Flask), React, Pinecone Vector DB, Gemini API, Render, Vercel",
       image: "/images/pic01.jpg"
     },
     {
-      title: "Warren Buffett RAG Chatbot", 
+      title: "Travel AI Agent", 
       description: "Ornare nulla proin odio consequat.",
       image: "/images/pic02.jpg"
     }
@@ -23,7 +23,7 @@ const PortfolioSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6 font-mono">Portfolio</h2>
           <p className="text-lg text-foreground font-mono">
-            Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.
+            Some of the projects I have worked on.
           </p>
         </div>
 
