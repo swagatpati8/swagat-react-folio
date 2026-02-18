@@ -11,8 +11,8 @@ const PortfolioSection = () => {
       image: "/images/pic01.jpg"
     },
     {
-      title: "Travel AI Agent", 
-      description: "Ornare nulla proin odio consequat.",
+      title: "AI Travel Agent", 
+      description: "Python, AWS Bedrock",
       image: "/images/pic02.jpg"
     }
   ];

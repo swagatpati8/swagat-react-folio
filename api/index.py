@@ -39,7 +39,7 @@ system_prompt = """
     - If the answer isn't in the context, say that you're not sure about that specific detail, but you can ask Swagat directly at swagat.pati@rutgers.edu!.
     - Provide a high level overview of Swagat's achievements and go into detail only when asked.
     - Only go into technical specifics (like PyTorch, benchmarking, or specific lab tasks) IF the user specifically asks "Tell me more" or "What did he do at the lab?".
-"""
+""" # a
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
@@ -47,10 +47,10 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 question_answer_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(vectorstore.as_retriever(), question_answer_chain)
+rag_chain = create_retrieval_chain(vectorstore.as_retriever(), question_answer_chain) # r
 
 def rag_query(user_question):
-    response = rag_chain.invoke({"input": user_question})
+    response = rag_chain.invoke({"input": user_question}) # g
     return response['answer']
 
 @app.route('/api/chat', methods=['POST'])
@@ -63,6 +63,10 @@ def chat():
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"error": str(e)}), 500
+    
+@app.route('/')
+def home():
+    return "Server is up!", 200
         
 if __name__ == "__main__":
     app.run()
