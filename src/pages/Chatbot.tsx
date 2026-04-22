@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import ReactMarkdown from 'react-markdown';
 
 const Chatbot = () => {
   const [input, setInput] = useState("");
@@ -22,7 +23,7 @@ const Chatbot = () => {
     setLoading(true);
     
     try {
-      const API_URL = "https://swagat-react-folio.onrender.com/api/chat"
+      const API_URL = "https://swagat-react-folio-production.up.railway.app/api/chat"
       const response = await fetch(API_URL, {        
         method: "POST",
         headers: {"Content-Type": "application/json"},

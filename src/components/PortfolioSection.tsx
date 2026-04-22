@@ -3,7 +3,8 @@ const PortfolioSection = () => {
     {
       title: "MMA Fight Predictor",
       description: "React, Python (Flask), Machine Learning, Supabase",
-      image: "/images/pic03.jpg"
+      image: "/images/pic03.jpg",
+      link: "https://mma-fight-predictor-mauve.vercel.app"
     },
     {
       title: "Swagat's RAG Chatbot",
@@ -31,7 +32,13 @@ const PortfolioSection = () => {
           {projects.map((project, index) => (
             <div key={index} className="rounded-lg overflow-hidden hover:scale-105 transition-transform">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                {project.link ? (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full h-full">
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover cursor-pointer" />
+                  </a>
+                ) : (
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-3 font-mono">{project.title}</h3>
