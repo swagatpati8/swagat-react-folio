@@ -6,4 +6,3 @@ langchain-classic
 langchain-core
 python-dotenv
 gunicorn
-gevent
