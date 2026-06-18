@@ -31,7 +31,11 @@ const HeroSection = () => {
                 <div className="w-10 h-10 bg-nav-accent rounded flex items-center justify-center">
                   <span className="text-white font-bold">LC</span>
                 </div>
-                
+              </a>
+              <a href="https://www.chess.com/member/bongcloud-8" className="hover:opacity-80 transition-opacity">
+                <div className="w-10 h-10 bg-nav-accent rounded flex items-center justify-center">
+                  <span className="text-white font-bold">Chess</span>
+                </div>
               </a>
             </div>
             <div className="pt-6">

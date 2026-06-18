@@ -1,7 +1,6 @@
 const SkillsSection = () => {
   const skills = [
-    "MongoDB", "JAVA", "ReactJS", "Spring Boot", "Angular", 
-    "Python", "Swagger UI", "Jenkins", "Docker", "AWS"
+    "Python", "PostgreSQL", "Flask", "AWS", "MongoDB", "JAVA", "ReactJS", "Spring Boot", "Angular", "Swagger UI"
   ];
 
   return (
