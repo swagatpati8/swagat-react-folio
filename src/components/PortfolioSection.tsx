@@ -9,7 +9,8 @@ const PortfolioSection = () => {
     {
       title: "Swagat's RAG Chatbot",
       description: "Python (Flask), React, Pinecone Vector DB, Gemini API, Render, Vercel",
-      image: "/images/pic01.jpg"
+      image: "/images/pic01.jpg",
+      link: "https://swagat-react-folio.vercel.app/chatbot"
     },
     {
       title: "AI Travel Agent", 
